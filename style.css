@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Karla", sans-serif;
+}
+body{
+    background-color: #E6EFF6;
+    padding: 2rem;
+    color: #FFFFFF;
+}
+.container{
+    margin: 1rem auto;
+    width: 280px;
+}
+.container-contentOne{
+    background-color: #FFFFFF;
+    border-radius: 0.4rem 0.4rem 0 0;
+    height: auto;
+    padding: 2rem;
+    box-shadow: 2px 0px 12px 2px rgba(0, 0, 0, 0.2);
+}
+.heading{
+    color: #33B2AF;
+    margin: 0 0 1rem 0;
+    text-shadow: 1px 1px #20A099;
+    
+}
+.trail{
+    color: #CCDE6C;
+    margin: 0 0 1rem 0;
+    font-weight: 800;
+}
+.detail{
+    color: #A9ABB7;
+    margin: 0 0 1rem 0;
+    font-weight: 500;
+    line-height: 1.5rem;
+}
+.container-contentTwo{
+    display: flex;
+    flex-direction: column;
+    box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.2);
+}
+.bill{
+    background-color: #2BB3B1;
+    height: auto;
+    padding: 2rem;
+}
+
+.bill h4{
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+.bill p{
+    font-weight: 500;
+}
+.amount{
+    margin-bottom: 1rem;
+}
+.price{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.range{
+    color: #7FDDDE;
+    padding-left: 0.8rem;
+}
+button{
+    background-color: #BFDF32;
+    color: #F5FACA;
+    margin: 2rem 0;
+    width: 100%;
+    padding: 0.8rem;
+    border: none;
+    border-right: 6px double #2BB3B1;
+    border-bottom: 6px double #2BB3B1;
+    text-shadow: 1px 1px 1px #2BB3B1;
+    border-radius: 0.4rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+    box-shadow: 8px 10px 5px #20A099;
+}
+button:hover{
+    background-color: #2BB3B1;
+    color: #F5FACA;
+    border-right: 6px double #BFDF32;
+    border-bottom: 6px double #BFDF32;
+    text-shadow: 1px 1px 1px #BFDF32;
+    box-shadow: 8px 10px 5px #20A099 inset;
+    cursor: pointer;
+}
+.description{
+    padding: 2rem;
+    background-color: #4ABEBD;
+    border-radius: 0 0 0.4rem 0.4rem;
+}
+.description h4{
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+.description span{
+    display: block;
+    color: #AAF3F5;
+    line-height: 1.5rem;
+    font-weight: 500;
+}
+
+@media(min-width:768px){
+    body{
+        padding: 7rem;
+    }
+    .container{
+        width: 600px !important;
+    }
+    .heading{
+        font-size: 1.5rem !important;
+    }
+    .trail{
+        font-size: 1.1rem !important;
+        
+    }
+    .container-contentTwo{
+        flex-direction: row !important;
+    }
+    .bill{
+        width: 50%;
+        border-radius: 0 0 0 0.4rem;
+    }
+    .description{
+        width: 50%;
+        border-radius: 0 0 0.4rem 0;
+        box-shadow: 4px 0px 12px rgba(0, 0, 0, 0.2);
+    }
+}
